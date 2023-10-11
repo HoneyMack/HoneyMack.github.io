@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Takuya Okubo</title>
+  <meta name="description" content="Takuya Okubo's webpage.">
+
+  <meta property="og:title" content="Takuya Okubo">
+  <meta property="og:description" content="Takuya Okubo's webpage.">
+  <meta property="og:image" content="static/profile_picture.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="static/profile_picture.jpg">
+  <meta property="og:url" content="https://honeymack.github.io/">
+  <link rel="canonical" href="https://honeymack.github.io/">
+
+  <!-- Website template taken from https://github.com/yunifuchioka/yunifuchioka.github.io -->
+  <!-- The above template taken from https://github.com/ZhaomingXie/ZhaomingXie.github.io -->
+  <!-- The above template originally written by Hung Yu "Ben" Ling: https://hungyuling.com/ -->
+
+  <style>
+    :root {
+      --accent-color: rgb(6, 69, 173);
+      --fg-color: rgb(32, 33, 34);
+      --bg-color: #fff;
+      --max-content-width: 800px;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: calc(12px + 0.05vw);
+      color: var(--fg-color);
+      background-color: var(--bg-color);
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 90vw;
+      max-width: var(--max-content-width);
+      padding: 2rem 0;
+      background-color: var(--bg-color);
+      min-height: 90vh;
+
+    }
+
+    h1,
+    h2 {
+      font-weight: 600;
+      margin-top: 1.3em;
+    }
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    h2 {
+      font-size: 1.9em;
+    }
+
+    p,
+    li {
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 2em;
+    }
+
+    #publist {
+      padding-left: 0;
+    }
+
+    #publist>* {
+      margin-bottom: 1.2em;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    a {
+      text-decoration: underline;
+      color: var(--fg-color);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .pub-fig {
+      flex: 0.6 1 20%;
+      min-width: 120px;
+      max-width: 200px;
+      margin-right: 2%;
+    }
+
+    .pub-text {
+      flex: 1 1 75%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <main>
+    <div>
+      <div style="display: inline-block; vertical-align: top; padding-right: 1%; width: 58%">
+        <h1 style="margin: 0;">Takuya Okubo</h1>
+        <h1 style="margin: 0;">大久保 拓哉</h1>
+        <p style="margin: 0 0 1em 0;">takuyaokubo069@gmail.com</p>
+        <p style="font-size: 1.4em; text-align: justify;">
+          <b> current working</b>
+        </p>
+      </div>
+      <div style="display: inline-block; vertical-align: middle; padding-left: 1%; width: 38%;">
+        <img alt="portrait" src="static/profile_picture.jpg">
+      </div>
+    </div>
+
+    <p style="font-size: 1.4em; text-align: justify;">
+      paragraph1
+    </p>
+    <p style="font-size: 1.4em; text-align: justify;">
+      paragraph2
+    </p>
+    <p>
+      <a href="static/test_cv">CV</a>
+      /
+      <a href="mailto:takuyaokubo069@gmail.com">Email</a>
+      /
+      <a href="https://www.linkedin.com/in/%E6%8B%93%E5%93%89-%E5%A4%A7%E4%B9%85%E4%BF%9D-682994219/">LinkedIn</a>
+      /
+      <a href="https://github.com/HoneyMack">GitHub</a>
+      /
+      <a href="https://twitter.com/HoneyMacker">Twitter (X)</a>
+    </p>
+    <h2>Research</h2>
+    <ul id="publist">
+      <li>
+        <div class="pub-fig">
+          <img alt="Test_research_alt" src="projects/Test_research_pic">
+        </div>
+        <div class="pub-text">
+          <span style="font-weight: 600;">Test_Title.</span>
+          <br><span style="font-weight: 600;">Test_leading</span>,Test_author2, Test_author3.
+          <br><span style="font-style: italic;">Content</span>
+          <div>
+            <a href="Test_project_page">Project Page</a>
+            /
+            <a href="Test_paper">Paper</a>
+            /
+            <a href="Test_video">Video</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <h2>Robots</h2>
+    <ul id="publist">
+      <li>
+        <div class="pub-fig">
+          <img alt="Test_pic" src="projects/test">
+        </div>
+        <div class="pub-text" style="text-align: justify;">
+          <span style="font-weight: 600; ">Test1</span><br>
+          Test2
+          <div>
+            <a href="Temp">Video</a>
+            /
+            <a href="Temp">Code</a>
+          </div>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <h2>Personal</h2>
+    <ul style="text-align: justify;">
+      <li>Temp</li>
+    </ul>
+  </main>
+</body>
+
+</html>
