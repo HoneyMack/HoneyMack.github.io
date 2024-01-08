@@ -126,7 +126,8 @@
     </div>
 
     <p style="font-size: 1.4em; text-align: justify;">
-      paragraph1
+      幼少期からモノづくり・電子工作が趣味で、ペルチェ式冷蔵庫やロボットアーム、倒立振子などを製作。趣味が高じて群馬高専の電子情報工学科に入学し、回路学やプログラミングなどの専門知識を学ぶとともに、経験を積むためにゲームの制作や競技プログラミングコンテストに出場。現在は高専を卒業し、東大計数工学科に在籍中。縁あって松尾研究室TRAIL（Tokyo
+      Robotics and AI Lab）に所属し、ロボットの高機能化に向けた研究・開発に取り組んでいる。
     </p>
     <p style="font-size: 1.4em; text-align: justify;">
       paragraph2
@@ -149,28 +150,141 @@
           <img alt="Test_research_alt" src="projects/Test_research_pic">
         </div>
         <div class="pub-text">
-          <span style="font-weight: 600;">Test_Title.</span>
-          <br><span style="font-weight: 600;">Test_leading</span>,Test_author2, Test_author3.
-          <br><span style="font-style: italic;">Content</span>
+          <span style="font-weight: 600;">GenDOM: Generalizable One-shot Deformable Object Manipulation </span>
+          <br><span style="font-weight: 600;">So Kuroki</span>, Jiaxian Guo, Tatsuya Matsushima, Takuya Okubo, et al.
+          <br><span style="font-style: italic;">1. 柔軟物のヤング率などのパラメータをデモから推定、2. シミュレータにパラメータを反映、3.
+            反映したシミュレータで学習、というパイプラインにより汎化可能な柔軟物のマニピュレーションが実現できることを提案・示した論文。私は柔軟物の点群処理・ロボットアームの制御関連のエンジニアリングのお手伝いをしました。</span>
           <div>
-            <a href="Test_project_page">Project Page</a>
+            <a href="https://sites.google.com/view/gendom/home">Project Page</a>
             /
-            <a href="Test_paper">Paper</a>
+            <a href="https://arxiv.org/abs/2309.09051">Paper</a>
             /
-            <a href="Test_video">Video</a>
+            <a href="https://drive.google.com/file/d/13fq33pAl1kt676eOpnolFCqn6LQJOpC1/view">Video</a>
           </div>
         </div>
       </li>
     </ul>
-    <h2>Robots</h2>
+    <h2>Hardware</h2>
     <ul id="publist">
       <li>
         <div class="pub-fig">
           <img alt="Test_pic" src="projects/test">
         </div>
         <div class="pub-text" style="text-align: justify;">
-          <span style="font-weight: 600; ">Test1</span><br>
-          Test2
+          <span style="font-weight: 600; ">ペルチェ式冷蔵庫</span><br>
+          趣味で作ったペルチェ式冷蔵庫です。冷却能力は外気温28℃で6~8℃程度です。温度制御は、PICマイコンを用いてPID制御で実現しました。
+          <div>
+            <a href="Temp">Video</a>
+            /
+            <a href="Temp">Code</a>
+          </div>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="pub-fig">
+          <img alt="Test_pic" src="projects/test">
+        </div>
+        <div class="pub-text" style="text-align: justify;">
+          <span style="font-weight: 600; ">車輪型倒立振子</span><br>
+          趣味で作った車輪型倒立振子です。制御はPID制御をベースに、一部適応制御的な要素を含めたものを使用しています。
+          マイコンはArduino Nano, IMUはMPU6050を使用しています。
+          <div>
+            <a href="Temp">Video</a>
+            /
+            <a href="Temp">Code</a>
+          </div>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="pub-fig">
+          <img alt="Test_pic" src="projects/test">
+        </div>
+        <div class="pub-text" style="text-align: justify;">
+          <span style="font-weight: 600; ">ロボットアーム</span><br>
+          趣味で作った４自由度+グリッパー1自由度のロボットアームです。コントローラを使って操作できます。
+          Arduino Nanoを使って幾何学的に解いた逆運動学を用いて位置制御を実現しています。
+          <div>
+            <a href="Temp">Video</a>
+            /
+            <a href="Temp">Code</a>
+          </div>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="pub-fig">
+          <img alt="Test_pic" src="projects/test">
+        </div>
+        <div class="pub-text" style="text-align: justify;">
+          <span style="font-weight: 600; ">球体型４脚ロボット（NetBall）</span><br>
+          チームSAVERSで製作した球体型４脚ロボット（名称：NetBall）です。私は主に制御（と設計・回路の一部）を担当しました。歩行ができます。
+          <div>
+            <a href="Temp">Video</a>
+            /
+            <a href="Temp">Code</a>
+          </div>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <h2>Software</h2>
+    <ul id="publist">
+      <li>
+        <div class="pub-fig">
+          <img alt="Test_pic" src="projects/test">
+        </div>
+        <div class="pub-text" style="text-align: justify;">
+          <span style="font-weight: 600; ">マリオ風2D横スクロールアクションゲームの制作</span><br>
+          群馬高専での文化祭（工華祭）の展示物として、チームで制作したマリオ風2D横スクロールアクションゲームです。
+          私はリーダとして包括的なプログラムの作成を担当しました。言語はC++で、グラフィクスの描画にはDXライブラリを用いています。
+          <div>
+            <a href="Temp">Video</a>
+            /
+            <a href="Temp">Code</a>
+          </div>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="pub-fig">
+          <img alt="Test_pic" src="projects/test">
+        </div>
+        <div class="pub-text" style="text-align: justify;">
+          <span style="font-weight: 600; ">陣取りゲーム「巡りマス」のアルゴリズム開発</span><br>
+          2018年全国高等専門学校プログラミングコンテスト競技部門のゲーム「巡りマス」にチームで出場するに当たって、ゲーム攻略用のアルゴリズムの開発を担当しました。 
+          <div>
+            <a href="Temp">Video</a>
+            /
+            <a href="Temp">Code</a>
+          </div>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="pub-fig">
+          <img alt="Test_pic" src="projects/test">
+        </div>
+        <div class="pub-text" style="text-align: justify;">
+          <span style="font-weight: 600; ">疲労度を考慮した予定推薦アプリの開発</span><br>
+          100 Programと呼ばれる学生支援プログラムに参加し、チームを組んで疲労度を考慮した予定推薦アプリを開発しました。私は主にアルゴリズムの考案と実装を担当しました。
+          <div>
+            <a href="Temp">Video</a>
+            /
+            <a href="Temp">Code</a>
+          </div>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="pub-fig">
+          <img alt="Test_pic" src="projects/test">
+        </div>
+        <div class="pub-text" style="text-align: justify;">
+          <span style="font-weight: 600; ">人狼AI（AIWolfK2B）の開発</span><br>
+          第5回人狼知能国際大会の自然言語部門に出場すべくチームを組んで人狼AI（AIWolfK2B）を開発しました。
+          私はリーダを担当し、アルゴリズムの考案・実装等を行いました。また、出場した大会ではキャラクター賞を受賞しました。
           <div>
             <a href="Temp">Video</a>
             /
@@ -182,7 +296,7 @@
     </ul>
     <h2>Personal</h2>
     <ul style="text-align: justify;">
-      <li>Temp</li>
+      <li></li>
     </ul>
   </main>
 </body>
